@@ -11,13 +11,23 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 import { AuditComponent } from './audit';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule, MatFormFieldModule, MatPaginatorModule, MatSortModule, MatInputModule, MatSelectModule } from '@angular/material';
 
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        appRoutingModule
+        appRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatTableModule
     ],
     declarations: [
         AppComponent,
